@@ -17,7 +17,7 @@ name##_t m_o##name; \
 retType name(__VA_ARGS__)
 
 export namespace Hooks {
-	// basic ass vmt, do not use this. Please...
+	// basic vmt, do not use this. Please...
 	uintptr_t VMTHook(void* base, size_t index, uintptr_t hookPtr) {
 		uintptr_t table = *(uintptr_t*)(base);
 		uintptr_t functionPtr = table + index * sizeof(uintptr_t);
